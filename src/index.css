@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bebas Neue", "Inter", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --color-ink: #0a0a0a;
+  --color-panel: #141312;
+  --color-panel-2: #1c1a18;
+  --color-ember-50: #fff4ec;
+  --color-ember-100: #ffe4cc;
+  --color-ember-300: #ffb066;
+  --color-ember-400: #ff9a3d;
+  --color-ember-500: #fb7a1a;
+  --color-ember-600: #ea5d0a;
+  --color-ember-700: #c24608;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: #f5f1ec;
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+.text-gradient-ember {
+  background-image: linear-gradient(90deg, #ffb066 0%, #fb7a1a 55%, #ff5c1a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bg-noise {
+  background-image: radial-gradient(circle at 20% 20%, rgba(251, 122, 26, 0.15), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(255, 154, 61, 0.12), transparent 40%);
+}
+
+::selection {
+  background-color: #fb7a1a;
+  color: #0a0a0a;
+}
